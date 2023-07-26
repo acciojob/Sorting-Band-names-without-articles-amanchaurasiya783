@@ -5,4 +5,4 @@ function strip(tourist){
 	return tourist.replace(/^(a |an |the )/i, '').trim();
 }
 const sorttourist = touristSpots.sort((a, b) => strip(a) > strip(b) ? 1 : -1);
-document.getElementById("band").innerHTML = sorttourist.map(band => `<li>${band}</li>`).join('')
+document.getElementById("band").innerHTML = sorttourist.map(band => `<li>${band}</li>`)
